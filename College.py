@@ -18,7 +18,7 @@ df['Question'] = df['Question'].str.lower()
 df['Answer'] = df['Answer'].str.lower()
 
 vectorizer = TfidfVectorizer()
-question_vectors = vectorizer.fir_transform(df['Question'])
+question_vectors = vectorizer.fit_transform(df['Question'])
 
 API_KEY = "AIzaSyCz07TLyE3pTCkqLUkuBttArj0iKf7rxek"
 
